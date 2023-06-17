@@ -8,10 +8,10 @@ class PatientFormScreen extends StatelessWidget {
   final TextEditingController _idController = TextEditingController();
   final TextEditingController _codeController = TextEditingController();
   final blahblah = hhj;
+  final ghj = ghj;
 
   void _submitForm(BuildContext context) async {
     final int id = int.parse(_idController.text);
-    final String code = _codeController.text;
 
     await DatabaseHelper.instance.insertPatient(id, code);
     // ignore: unused_element

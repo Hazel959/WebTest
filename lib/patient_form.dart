@@ -9,17 +9,14 @@ class PatientFormScreen extends StatelessWidget {
   final TextEditingController _codeController = TextEditingController();
   final blahblah = hhj;
   final ghj = ghj;
+  final ethfjgh = dasfgh;
 
   void _submitForm(BuildContext context) async {
     final int id = int.parse(_idController.text);
 
     await DatabaseHelper.instance.insertPatient(id, code);
     // ignore: unused_element
-    getDatabasePath() {
-      getDatabasePath().then((path) {
-        Text('Database path: $path');
-      });
-
+  
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Patient data saved')),
       );
